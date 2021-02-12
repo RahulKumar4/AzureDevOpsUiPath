@@ -20,5 +20,5 @@ steps:
   inputs:
       orchestratorConnection: 'CloudOrchProd'
       packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
-      folderName: 'Modern_RahulKumar_Demo'
+      folderName: 'BU1'
 
