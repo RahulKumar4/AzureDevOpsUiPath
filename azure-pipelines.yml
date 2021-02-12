@@ -16,3 +16,9 @@ steps:
     projectJsonPath: '$(Build.SourcesDirectory)'
     orchestratorConnection: 'rahul.kumar@uipath.com'
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
+- task: UiPathDeploy@2
+  inputs:
+      orchestratorConnection: 'rahul.kumar@uipath.com'
+      packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
+      folderName: 'Modern_RahulKumar_Demo'
+
