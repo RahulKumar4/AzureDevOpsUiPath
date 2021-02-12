@@ -14,5 +14,5 @@ steps:
   inputs:
     versionType: 'CurrentVersion'
     projectJsonPath: '$(Build.SourcesDirectory)'
-    orchestratorConnection: 'StagingCloudOrchestrator'
+    orchestratorConnection: 'rahul.kumar@uipath.com'
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
