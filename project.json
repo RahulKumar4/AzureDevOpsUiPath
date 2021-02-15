@@ -7,7 +7,7 @@
     "UiPath.Mail.Activities": "[1.9.5]",
     "UiPath.System.Activities": "[20.10.3]",
     "UiPath.Testing.Activities": "[1.2.5]",
-    "UiPath.UIAutomation.Activities": "[20.10.8]"
+    "UiPath.UIAutomation.Activities": "[20.10.9]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -42,9 +42,14 @@
         "editingStatus": "InProgress",
         "testCaseId": "9cad5b92-0811-4815-a550-cdcbf33e169d",
         "fileName": "TestCase1.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "0b006846-ebf6-4509-86b6-841fb515c2f8",
+        "fileName": "TestCase_ApplyLoan.xaml"
       }
     ],
-    "modernBehavior": false
+    "modernBehavior": true
   },
   "expressionLanguage": "VisualBasic",
   "entryPoints": [

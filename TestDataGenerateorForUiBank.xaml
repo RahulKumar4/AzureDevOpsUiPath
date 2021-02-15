@@ -1,0 +1,104 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Test_Data_Management" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:utat="clr-namespace:UiPath.Testing.Activities.TestData;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="YearlyIncome" Type="OutArgument(x:Decimal)" />
+    <x:Property Name="FirstName" Type="OutArgument(x:String)" />
+    <x:Property Name="LastName" Type="OutArgument(x:String)" />
+    <x:Property Name="Email" Type="OutArgument(x:String)" />
+    <x:Property Name="Age" Type="OutArgument(x:Decimal)" />
+    <x:Property Name="PhoneNumber" Type="OutArgument(x:Decimal)" />
+    <x:Property Name="AccountNumber" Type="OutArgument(x:Decimal)" />
+    <x:Property Name="LoanAmount" Type="OutArgument(x:Decimal)" />
+    <x:Property Name="LoanTerm" Type="OutArgument(x:String)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1182,910</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Test_Data_Management_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="32">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Testing</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Testing.Activities.TestData</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="23">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Test_Data_Management" sap:VirtualizedContainerService.HintSize="426,705" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <utat:GivenName DisplayName="FirstName" GivenNameResult="[FirstName]" sap:VirtualizedContainerService.HintSize="384,22" sap2010:WorkflowViewState.IdRef="GivenName_1" />
+    <utat:LastName DisplayName="LastName" sap:VirtualizedContainerService.HintSize="384,22" sap2010:WorkflowViewState.IdRef="LastName_1" LastNameResult="[LastName]" />
+    <utat:RandomNumber Decimals="0" DisplayName="Age" sap:VirtualizedContainerService.HintSize="384,22" sap2010:WorkflowViewState.IdRef="RandomNumber_1" Max="65" Min="45" Output="[Age]" />
+    <utat:RandomNumber Decimals="0" DisplayName="PhoneNumber" sap:VirtualizedContainerService.HintSize="384,22" sap2010:WorkflowViewState.IdRef="RandomNumber_2" Max="9999999999" Min="9000000000" Output="[PhoneNumber]" />
+    <utat:RandomNumber Decimals="0" DisplayName="AccountNumber" sap:VirtualizedContainerService.HintSize="384,22" sap2010:WorkflowViewState.IdRef="RandomNumber_3" Max="99999" Min="9999" Output="[AccountNumber]" />
+    <utat:RandomNumber Decimals="0" DisplayName="LoanAmount" sap:VirtualizedContainerService.HintSize="384,22" sap2010:WorkflowViewState.IdRef="RandomNumber_4" Max="10000" Min="999" Output="[LoanAmount]" />
+    <Assign DisplayName="Email" sap:VirtualizedContainerService.HintSize="384,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[Email]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[FirstName+"." +LastName+"@yahoo.com"]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <utat:RandomNumber Decimals="0" DisplayName="YearlyIncome" sap:VirtualizedContainerService.HintSize="384,22" sap2010:WorkflowViewState.IdRef="RandomNumber_5" Max="999999" Min="99999" Output="[YearlyIncome]" />
+    <utat:RandomValue DisplayName="LoanTerm" FilePath="TestData\DataLoanTerm.csv" sap:VirtualizedContainerService.HintSize="384,79" sap2010:WorkflowViewState.IdRef="RandomValue_1" Value="[LoanTerm]" />
+  </Sequence>
+</Activity>
