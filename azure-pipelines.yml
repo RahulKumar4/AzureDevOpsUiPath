@@ -20,8 +20,8 @@ steps:
   inputs:
     testTarget: 'TestSet'
     orchestratorConnection: 'CloudOrchProd'
-    testSet: 'TestCase_ApplyLoan'
-    folderName: 'BU1'       
+    testSet: 'TestingSetUiBank'
+    folderName: 'BU1'
 - task: UiPathDeploy@2
   inputs:
       orchestratorConnection: 'CloudOrchProd'
