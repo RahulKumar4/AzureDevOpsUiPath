@@ -21,8 +21,7 @@ steps:
     testTarget: 'TestSet'
     orchestratorConnection: 'CloudOrchProd'
     testSet: 'TestCase_ApplyLoan'
-    folderName: 'BU1'
-    testReportDestination: '$(Build.ArtifactStagingDirectory)\report.xml'
+    folderName: 'BU1'       
 - task: UiPathDeploy@2
   inputs:
       orchestratorConnection: 'CloudOrchProd'
